@@ -13,10 +13,10 @@
 
       <main>
         <h1 id="title">freeCodeCamp Survey Form</h1>
-        <h2>Thank you for taking the time to help us improve the platform </h2>
+        <p id="description">Thank you for taking the time to help us improve the platform </p>
         <form id="survey-form">
           <div class="form-group">
-            <label id="name-label" for="name">Name</label>
+            <label id="name-label" for="name">Name</label><br>
             <input
               type="text"
               name="name"
@@ -27,8 +27,8 @@
             />
           </div>
 
-          <div>
-            <label id="email-label" for="email">Email</label>
+          <div class="form-group">
+            <label id="email-label" for="email">Email</label><br>
             <input
               type="email"
               name="email"
@@ -39,8 +39,8 @@
             />
           </div>
           
-          <div>
-            <label id="number-label" for="age">Age <span>(Optional)</span></label>
+          <div class="form-group">
+            <label id="number-label" for="age">Age <span>(Optional)</span></label><br>
             <input
               type="number"
               name="age"
@@ -52,8 +52,8 @@
             />
           </div>
 
-          <div>
-            <label id="role-label" for="role">Which option best describes your current role?</label>
+          <div class="form-group">
+            <label id="role-label" for="role">Which option best describes your current role?</label><br>
             <select id="dropdown" name="role" class="form-control" required>
               <option disabled selected value>Select current role</option>
               <option value="student">Student</option>
@@ -65,18 +65,38 @@
             </select>
           </div>
 
-          <div>
-            <label id="recommend-label" for="recommend">
-              Which option best describes your current role?
+          <div class="form-group">
+            <label>Would you recommend freeCodeCamp to a friend?</label><br>
+            <label>
+              <input
+                name="user-recommend"
+                value="definitely"
+                type="radio"
+                class="input-radio"
+                checked
+              />Definitely
             </label>
-            <input type="radio">
+
+            <label>
+              <input
+                name="user-recommend"
+                value="maybe"
+                type="radio"
+                class="input-radio"
+                checked
+              />Maybe
+            </label>
+
+            <label>
+              <input
+                name="user-recommend"
+                value="not-sure"
+                type="radio"
+                class="input-radio"
+                checked
+              />Not Sure
+            </label>
           </div>
-
-Would you recommend freeCodeCamp to a friend?
-Definitely
-Maybe
-Not sure
-
 
         </form>
       </main>
